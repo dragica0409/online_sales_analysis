@@ -20,3 +20,10 @@ manager.display_products()
 # Prikazujemo ukupnu vrednost inventara
 print("\n" + manager.total_inventory_value())
 
+# Uklanjanje proizvoda
+print("\nUklanjamo proizvod 'Telefon'...")
+manager.remove_product("Telefon")
+
+# Ponovo prikazujemo listu proizvoda
+print("\nAžurirani proizvodi:")
+manager.display_products()
