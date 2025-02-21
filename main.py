@@ -27,3 +27,17 @@ manager.remove_product("Telefon")
 # Ponovo prikazujemo listu proizvoda
 print("\nAžurirani proizvodi:")
 manager.display_products()
+from cart import Cart
+
+# Kreiranje instance Cart
+cart = Cart()
+
+# Dodavanje proizvoda u korpu
+cart.add_to_cart(p1)
+cart.add_to_cart(p2)
+cart.add_to_cart(p3)
+
+# Prikazivanje sadržaja korpe i ukupne vrednosti
+print("\nSadržaj korpe:")
+cart.display_cart()
+print(cart.calculate_total())
